@@ -1,0 +1,12 @@
+.ErrorBoundary {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.ErrorBoundary__placeholder-wrapper {
+  max-width: 10rem;
+  max-height: 10rem;
+}

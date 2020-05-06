@@ -1,0 +1,47 @@
+@import '../../scss/index.scss';
+
+.ReposSearch {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  height: 100vh;
+  width: 60%;
+  min-width: 60rem;
+}
+
+.ReposSearch__input-wrapper,
+.ReposSearch__pagination-wrapper {
+  display: flex;
+  align-items: center;
+  padding: 1.5rem;
+  width: 100%;
+}
+
+.ReposSearch__input-wrapper {
+  justify-content: center;
+}
+
+.ReposSearch__pagination-wrapper {
+  justify-content: space-between;
+}
+
+.ReposSearch__input {
+  @extend %reset-input;
+
+  width: 50%;
+  font-size: 1.5rem;
+  border-bottom: 1px solid #ccc;
+}
+
+.ReposSearch__pagination-buttons-wrapper {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.ReposSearch__duration-paragraph {
+  text-align: right;
+}
+
+.RepoSearch__pagination-button {
+  @include button;
+}

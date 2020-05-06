@@ -1,0 +1,29 @@
+@import '../../scss/index.scss';
+
+.Spinner {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 5vh;
+}
+
+.Spinner::after {
+  content: '';
+  display: block;
+  width: 46px;
+  height: 46px;
+  margin: 1px;
+  border: 3px solid $color-primary;
+  border-radius: 50%;
+  border-color: $color-primary transparent $color-primary transparent;
+  animation: spinner 1.2s linear infinite;
+}
+
+@keyframes spinner {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  100% {
+    transform: rotateZ(360deg);
+  }
+}

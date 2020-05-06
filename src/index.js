@@ -4,11 +4,13 @@ import { createStore, applyMiddleware, compose } from 'redux';
 import { Provider } from 'react-redux';
 import thunk from 'redux-thunk';
 
-import './index.css';
 import App from './app/layout/App';
+import { reducer } from './app/reducer';
 import * as serviceWorker from './serviceWorker';
+import './index.scss';
 
 const store = createStore(
+  reducer,
   compose(
     applyMiddleware(thunk),
     // eslint-disable-next-line no-underscore-dangle

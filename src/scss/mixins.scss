@@ -1,0 +1,19 @@
+@mixin button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem 1rem;
+  border: 1px solid transparent;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  text-align: center;
+  letter-spacing: 0.02rem;
+  cursor: pointer;
+  text-transform: uppercase;
+  line-height: 1;
+  margin: 1rem;
+  white-space: nowrap;
+  color: #fff;
+  background-color: $color-primary;
+}

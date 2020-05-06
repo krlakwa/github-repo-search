@@ -1,0 +1,94 @@
+.RepoDetails {
+  flex: 1;
+  width: 60%;
+  min-width: 60rem;
+  display: flex;
+  margin: 0 auto;
+  padding: 1rem;
+  flex-direction: column;
+  background: #fff;
+}
+
+.RepoDetails__repo {
+  flex: 1;
+  display: flex;
+  max-height: 10rem;
+  font-size: 1.2rem;
+}
+
+.RepoDetails__avatar {
+  max-height: 100%;
+  max-width: 20%;
+  margin-right: 1rem;
+}
+
+.RepoDetails__repo-details {
+  display: flex;
+  flex-direction: column;
+  &:not(:last-child) {
+    margin-right: 2.5rem;
+  }
+}
+
+.RepoDetails__repo-details-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.RepoDetails__repo-details-column {
+  display: block;
+  width: 100%;
+  margin-top: 0.5rem;
+  padding: 0.2rem;
+
+  &:not(:last-child) {
+    margin-right: 0.8rem;
+  }
+}
+
+.RepoDetails__repo-details-title {
+  font-weight: 700;
+  margin-right: 0.5rem;
+}
+
+.RepoDetails__description {
+  margin: 1rem 0.5rem;
+}
+
+.RepoDetails__title {
+  font-weight: 700;
+}
+
+.RepoDetails__details {
+  flex: 1;
+  margin-top: 1.5rem;
+  display: flex;
+}
+
+.RepoDetails__data,
+.RepoDetails__stats {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+
+  &:not(:last-child) {
+    margin-right: 1.5rem;
+  }
+}
+
+.RepoDetails__cell {
+  flex: 1;
+  height: 8rem;
+}
+
+.RepoDetails__cell-title {
+  font-weight: 600;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.RepoDetails__cell-content {
+  text-align: center;
+  font-weight: 800;
+  font-size: 1.5rem;
+}
